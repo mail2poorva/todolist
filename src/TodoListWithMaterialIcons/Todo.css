@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.mainbg {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  align-items: center;
+  background: linear-gradient(to right, #02aab0, #00cdac);
+  /* background: linear-gradient(to right, #acb6e5, #86fde8); */
+}
+
+.mainbox {
+  background-color: #264a55;
+  width: 350px;
+  min-height: 450px;
+  margin: auto;
+
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  overflow: auto;
+}
+
+.mainh1 {
+  background-color: #87d4ce3b;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+input {
+  border-top: none;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  height: 30px;
+  width: 250px;
+  outline: none;
+  font-size: 20px;
+  color: white;
+}
+
+.plusbtn {
+  cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+ul {
+  text-align: center;
+  /* top: 130px; */
+  color: white;
+  text-align: center;
+}
+
+ul li {
+  flex-wrap: wrap;
+  /* background-color: red; */
+  display: flex;
+  height: 60px;
+  width: 350px;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+hr {
+  flex-basis: 100%;
+  border: 0;
+  height: 1px;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.336);
+}
+
+.delete {
+  color: #264a55;
+}
+
+.delete-btn {
+  margin-left: 20px;
+  margin-right: 20px;
+  /* margin: 20px 20px; */
+  cursor: pointer;
+  border-radius: 100%;
+  padding: 7px 7px;
+  outline: none;
+  border: none;
+  background: linear-gradient(to right, #02aab0, #00cdac);
+  transition: all 0.3s;
+}
+
+.delete-btn:hover {
+  background: #264a55;
+  border: 1px solid #00cdac;
+}
+
+.delete:hover {
+  color: white;
+}
+
+.flex-box {
+  display: flex;
+  padding: 15px;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+}
